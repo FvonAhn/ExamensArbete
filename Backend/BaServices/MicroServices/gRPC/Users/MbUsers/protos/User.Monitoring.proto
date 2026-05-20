@@ -1,0 +1,78 @@
+// Extracted from binaccess: BaServices\MicroServices\gRPC\Users\MbUsers\protos\User.proto
+// Monitoring invite and live-stream gRPC contract parts
+// Narrow showcase extract. It is not intended to compile standalone.
+
+// ----- source lines 41-45 -----
+  rpc GetMonitoringConnections (GetMonitoringConnectionsRequest) returns (GetMonitoringConnectionsReply);
+  rpc SendInvite (SendInviteRequest) returns (SendInviteReply);
+  rpc AcceptInvite (AcceptInviteRequest) returns (AcceptInviteReply);
+  rpc RemoveInvite (RemoveInviteRequest) returns (RemoveInviteReply);
+  rpc GetMaptunersForLiveStream (GetMaptunersForLiveStreamRequest) returns (GetMaptunersForLiveStreamReply);
+
+// ----- source lines 507-568 -----
+message GetMonitoringConnectionsRequest {
+  int32 user_id = 1;
+}
+
+message GetMonitoringConnectionsReply {
+  Result result = 1;
+  repeated Invite invites = 2;
+}
+
+message SendInviteRequest {
+  int32 user_id = 1;
+  string invited_email_address = 2;
+}
+
+message SendInviteReply {
+  Result result = 1;
+  Invite invite = 2;
+}
+
+message AcceptInviteRequest {
+  int32 invite_id = 1;
+  int32 acting_user_id = 2;
+}
+
+message AcceptInviteReply {
+  Result result = 1;
+  Invite invite = 2;
+}
+
+message RemoveInviteRequest {
+  int32 invite_id = 1;
+  int32 acting_user_id = 2;
+}
+
+message RemoveInviteReply {
+  Result result = 1;
+  bool success = 2;
+}
+
+message Invite {
+  int32 id = 1;
+  int32 user_id = 2;
+  int32 invited_user_id = 3;
+  int32 status = 4;
+  string owner_email_address = 5;
+  string invited_email_address = 6;
+}
+
+message GetMaptunersForLiveStreamRequest {
+  int32 user_id = 1;
+}
+
+message MaptunerInfo {
+  string maptuner_id = 1;
+  string name = 2;
+  bool is_shared = 3;
+  string owner_email_address = 4;
+}
+
+message GetMaptunersForLiveStreamReply {
+  Result result = 1;
+  repeated MaptunerInfo maptuners = 2;
+
+
+
+

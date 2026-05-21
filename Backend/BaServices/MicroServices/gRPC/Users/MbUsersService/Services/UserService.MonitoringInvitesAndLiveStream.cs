@@ -1,4 +1,4 @@
-// Extracted from binaccess: BaServices\\MicroServices\\gRPC\\Users\\MbUsersService\Services\UserService.cs
+// Extracted from the original backend: BaServices\\MicroServices\\gRPC\\Users\\MbUsersService\Services\UserService.cs
 // Backend service implementation for monitoring invites and shared Maptuners
 // Narrow showcase extract. It is not intended to compile standalone.
 

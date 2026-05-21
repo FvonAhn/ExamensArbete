@@ -1,4 +1,4 @@
-// Extracted from binaccess: BaServices\MicroServices\gRPC\Users\MbUsers\client\MbUsers.cs
+// Extracted from the original backend: BaServices\MicroServices\gRPC\Users\MbUsers\client\MbUsers.cs
 // gRPC client wrappers used by MonitoringEndpoints
 // Narrow showcase extract. It is not intended to compile standalone.
 

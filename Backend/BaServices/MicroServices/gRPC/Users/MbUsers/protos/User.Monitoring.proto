@@ -1,4 +1,4 @@
-// Extracted from binaccess: BaServices\MicroServices\gRPC\Users\MbUsers\protos\User.proto
+// Extracted from the original backend: BaServices\MicroServices\gRPC\Users\MbUsers\protos\User.proto
 // Monitoring invite and live-stream gRPC contract parts
 // Narrow showcase extract. It is not intended to compile standalone.
 
@@ -72,7 +72,7 @@ message MaptunerInfo {
 message GetMaptunersForLiveStreamReply {
   Result result = 1;
   repeated MaptunerInfo maptuners = 2;
-
+}
 
 
 

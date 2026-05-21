@@ -39,7 +39,7 @@ let renderCursorTimestampMs = 0;
 let lastUiPumpTickAtMs = 0;
 // Dev-only VIN override. Set to true to force the VIN below, false to use the VIN from SignalR.
 const DEV_USE_VIN_OVERRIDE = true;
-const DEV_VIN_OVERRIDE = "YDV69495K819";
+const DEV_VIN_OVERRIDE = "DEMO-VIN-000000";
 
 const RTT_MEASUREMENT_INTERVAL_ACTIVE_MS = 2000;
 const RTT_MEASUREMENT_INTERVAL_BACKGROUND_MS = 8000;

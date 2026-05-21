@@ -1,4 +1,4 @@
-// Extracted from binaccess: BaServices\FunctionalServices\MaptunerApi\Program.cs
+// Extracted from the original backend: BaServices\FunctionalServices\MaptunerApi\Program.cs
 // SignalR, JWT query-string auth, streaming state, and hub route registration
 // Narrow showcase extract. It is not intended to compile standalone.
 

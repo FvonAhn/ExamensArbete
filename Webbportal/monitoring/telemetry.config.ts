@@ -38,7 +38,7 @@ function requireEnv(name: keyof ImportMetaEnv): string {
  */
 export const telemetryConfig = {
   gatewayUrl: !DEV_USE_LOCAL_GATEWAY
-    ? "https://test.maptuner.se:5050"
+    ? "https://example.invalid:5050"
     : requireEnv("VITE_GATEWAY_URL"),
 
   telemetryHubPath: !DEV_USE_LOCAL_GATEWAY

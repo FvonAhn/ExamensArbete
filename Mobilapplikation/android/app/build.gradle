@@ -1,0 +1,3 @@
+dependencies {
+    implementation "com.microsoft.signalr:signalr:7.0.0"
+}
